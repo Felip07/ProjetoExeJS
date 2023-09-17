@@ -6,8 +6,8 @@ body {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-rows: 10vh 80vh 10vh;
-  color: #f1f1f1;
+  grid-template-rows: 10vh 80vh 5vh;
+  color: #888888;
 }
 
 .main {
@@ -20,11 +20,31 @@ body {
 .header,
 .footer {
   width: 100%;
+  position: relative;
   background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.title{
-  padding: 1px;
+.conteudo {
+  width: 100%;
+  position: relative;
+  background-color: #1e1e1e;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.conteudo-div {
+  text-align: center;
+  padding: 100px;
+  box-shadow: 4px 4px 2px #edd446;
+}
+
+.title {
+  color: #edd446;
 }
 
 .header {
@@ -32,8 +52,13 @@ body {
   border-top-right-radius: 7px;
 }
 
+.footer {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
 .menu {
-  margin: 2px;
+  margin: 1px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -65,10 +90,16 @@ body {
   z-index: 1;
   border-radius: 7px;
   background-color: #1e1e1e;
-  padding: 4px;
+  padding: 8px;
   text-align: center;
   opacity: 0;
+  /* overflow-wrap: break-word; */
+  overflow: hidden;
   transition: opacity 0.4s, transform 0.8s;
+}
+
+.reload {
+  cursor: pointer;
 }
 
 .screen-image {

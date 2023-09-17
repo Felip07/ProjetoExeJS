@@ -8,53 +8,47 @@
   </head>
   <body>
     <!-- Container -->
-    <div class="container">
+    <div class="container" id="container">
       <!-- Header -->
-      <div class="header">
-        <h1 class="title">Exercícios de Javascript</h1>
-      </div>
+      <div class="header"><h1 class="title">Exercícios de Javascript</h1></div>
+
       <!-- Main -->
       <div class="main">
         <!-- Conteúdo -->
         <div class="menu">
           <!-- Middle Page -->
           <div class="screen">
-            <p>Conversão de Moedas</p>
-            <img
-              class="screen-image"
-              src="img/thumbnail-e01.png"
-              alt="thumb1"
-            />
+            <p onclick="chamarExercicio('exercicio1')">Conversão de Moedas</p>
+            <img class="screen-image" src="img/thumbnail-e1.png" alt="thumb1" />
           </div>
           <div class="screen">
-            <p>Rendimento do Mês</p>
-            <img
-              class="screen-image"
-              src="img/thumbnail-e02.jpg"
-              alt="thumb2"
-            />
+            <p onclick="chamarExercicio('exercicio2')">Rendimento do Mês</p>
+            <img class="screen-image" src="img/thumbnail-e2.jpg" alt="thumb2" />
           </div>
           <div class="screen">
-            <p>Calculadora em Javascript</p>
-            <img
-              class="screen-image"
-              src="img/thumbnail-e03.jpg"
-              alt="thumb3"
-            />
+            <p onclick="chamarExercicio('exercicio3')">
+              Calculadora em Javascript
+            </p>
+            <img class="screen-image" src="img/thumbnail-e3.jpg" alt="thumb3" />
           </div>
           <div class="screen">
-            <p>Locadora de Veículos</p>
+            <p onclick="chamarExercicio('exercicio4')">Locadora de Veículos</p>
             <img class="screen-image" src="img/thumbnail-e4.png" alt="thumb4" />
           </div>
           <div class="screen">
-            <p>Contador</p>
+            <p onclick="chamarExercicio('exercicio5')">Contador</p>
             <img class="screen-image" src="img/thumbnail-e5.png" alt="thumb5" />
           </div>
         </div>
       </div>
 
+      <!-- Conteudo -->
+      <div class="conteudo" id="conteudo-main">
+        <div id="conteudo-div"></div>
+      </div>
+
       <!-- Footer -->
-      <div class="footer">Bottom Text</div>
+      <div class="footer"><p class="reload" onclick="reload()">Bottom Text</p></div>
     </div>
 
     <!-- Script -->
