@@ -9,12 +9,7 @@ function chamarExercicio(exercicio) {
     conteudoDiv.scrollIntoView({
       behavior: "smooth",
     });
-    conteudoDiv.innerHTML = `<h2 class='title'>Conversão de Moedas</h2>
-          <input type="number" placeholder="Valor p/ conversão: ">
-          <p>Converter para:</>
-          <input type="radio" name="conversao" id="01">BRL
-          <input type="radio" name="conversao" id="02">USD
-          <input type="radio" name="conversao" id="03">EUR`;
+    exercicio1();
   } else if (exercicio === "exercicio2") {
     conteudoDiv.scrollIntoView({
       behavior: "smooth",
@@ -38,6 +33,33 @@ function chamarExercicio(exercicio) {
   }
 }
 
+function exercicio1() {
+  conteudoDiv.innerHTML = `<h2 class='title'>Conversão de Moedas</h2>
+          <input type="number" placeholder="Insira o valor..." class="check-placeholder" id="value">
+          <br>Converter para:
+          <input type="radio" name="conversao" id="01">EUR
+          <input type="radio" name="conversao" id="02">USD
+          <br><input type="button" value="Converter" class="button-type">
+          <p id="result"></p>
+          `;
+
+  let value = Number(document.getElementById("value").value)
+  
+  const EURChecked = document.getElementById("01")
+  const USDChecked = document.getElementById("02")
+
+  if (EURChecked) {
+    value = value * 0.19
+    var resultado = document.getElementById("result")
+  } else if (USDChecked) {
+    value = value * 0.20
+    var resultado = document.getElementById("result")
+  } else {
+    var resultado = document.getElementById("result")
+    resultado.textContent = 'Nenhum valor inserido!'
+  }
+  resultado.textContent = `${value}`
+}
 
 function reload() {
   window.location.reload();

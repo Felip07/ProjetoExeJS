@@ -40,7 +40,8 @@ body {
 .conteudo-div {
   text-align: center;
   padding: 100px;
-  box-shadow: 4px 4px 2px #edd446;
+  box-shadow: 4px 4px 2px #edd446, -2px -2px 2px #080808;
+  justify-content: center;
 }
 
 .title {
@@ -131,4 +132,13 @@ body {
 .screen-image:not(:hover) {
   transition: 0.4s;
   filter: grayscale(90%);
+}
+
+.button-type {
+  background-color: #edd446;
+}
+
+.check-placeholder {
+  width: 50%;
+  text-align: center;
 }
