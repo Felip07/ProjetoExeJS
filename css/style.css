@@ -6,7 +6,7 @@ body {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-rows: 10vh 80vh 5vh;
+  grid-template-rows: 9vh 80vh 1vh;
   color: #888888;
 }
 
