@@ -37,7 +37,7 @@ body {
   display: flex;
 }
 
-.conteudo-div {
+#conteudo-div {
   text-align: center;
   padding: 100px;
   box-shadow: 4px 4px 2px #edd446, -2px -2px 2px #080808;
@@ -141,4 +141,12 @@ body {
 .check-placeholder {
   width: 50%;
   text-align: center;
+}
+
+.ativo {
+  display: block;
+}
+
+.conteudo-div {
+  display: none;
 }

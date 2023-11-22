@@ -9,49 +9,65 @@
   <body>
     <!-- Container -->
     <div class="container" id="container">
+
       <!-- Header -->
-      <div class="header"><h1 class="title">Exercícios de Javascript</h1></div>
+      <div class="header">
+        <h1 class="title">Exercícios de Javascript</h1>
+      </div>
+
 
       <!-- Main -->
       <div class="main">
+
         <!-- Conteúdo -->
         <div class="menu">
+
           <!-- Middle Page -->
-          <div class="screen">
-            <p onclick="chamarExercicio('exercicio1')">Conversão de Moedas</p>
+          <div class="screen" onclick="chamarExercicio('exercicio1')">
+            <p>Conversão de Moedas</p>
             <img class="screen-image" src="assets/thumbnail-e1.png" alt="thumb1" />
           </div>
-          <div class="screen">
-            <p onclick="chamarExercicio('exercicio2')">Rendimento do Mês</p>
+          <div class="screen" onclick="chamarExercicio('exercicio2')">
+            <p>Rendimento do Mês</p>
             <img class="screen-image" src="assets/thumbnail-e2.jpg" alt="thumb2" />
           </div>
-          <div class="screen">
-            <p onclick="chamarExercicio('exercicio3')">
-              Calculadora em Javascript
-            </p>
+          <div class="screen" onclick="chamarExercicio('exercicio3')">
+            <p>Calculadora em Javascript</p>
             <img class="screen-image" src="assets/thumbnail-e3.jpg" alt="thumb3" />
           </div>
-          <div class="screen">
-            <p onclick="chamarExercicio('exercicio4')">Locadora de Veículos</p>
+          <div class="screen" onclick="chamarExercicio('exercicio4')">
+            <p>Locadora de Veículos</p>
             <img class="screen-image" src="assets/thumbnail-e4.png" alt="thumb4" />
           </div>
-          <div class="screen">
-            <p onclick="chamarExercicio('exercicio5')">Contador</p>
+          <div class="screen" onclick="chamarExercicio('exercicio5')">
+            <p>Contador</p>
             <img class="screen-image" src="assets/thumbnail-e5.png" alt="thumb5" />
           </div>
         </div>
       </div>
 
+
       <!-- Conteudo -->
       <div class="conteudo" id="conteudo-main">
-        <div id="conteudo-div"></div>
+        <div class="conteudo-div" id="conteudo-div">
+
+          <!-- Exercicio 1 -->
+          <div id="exercicios">
+            <h2 class='title'>Conversão de Moedas</h2>
+            <input type="number" placeholder="Insira o valor..." class="check-placeholder" id="value">
+            <br><input type="button" value="Converter" class="button" id="button">
+            <p id="result"></p>
+          </div>
+        </div>
       </div>
+
 
       <!-- Footer -->
       <div class="footer"><p class="reload" onclick="reload()">Bottom Text</p></div>
     </div>
 
-    <!-- Script -->
+
+    <!-- Conexão com Script -->
     <script src="js/script.js"></script>
   </body>
 </html>
